@@ -11,22 +11,12 @@ it buils on top of  WP GraphQL to add support for mutationing subscriber
 
 ## Usage
 
-#### Querying
+#### Mutation
 
 ```graphql
 mutation subscribe {
   subscribe(input: {esfpx_email: "hieunguyenel+9911822@gmail.com", esfpx_name: "hieu nguyen", esfpx_lists: "3379fa33bf96"}) {
     subscribeId
-  }
-}
-```
-
-#### Mutation
-
-```graphql
-mutation {
-  updatePostLike(input:{id: 1930}) {
-    likes_count
   }
 }
 ```
